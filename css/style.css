@@ -1,0 +1,148 @@
+/*------HEADER------*/
+
+.navbar {
+    height: 10vh;
+}
+
+.navbar-logo img {
+    height: 12vh;
+}
+
+.btn-outline-success {
+    border-color: #f3be7d;
+}
+
+/*------BODY------*/
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.col-itens {
+    display: block;
+    height: auto;
+    float: left;
+    margin: 0 0 10% 0;
+}
+
+.col-first {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+}
+
+.col-2,
+.col-7 {
+    position: relative;
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 50vh;
+}
+
+.col-slogan {
+    border-radius: 0 0 50% 0;
+}
+
+.col-slogan p {
+    margin-top: 3%;
+    margin-inline-start: 5%;
+    margin-inline-end: 40%;
+    text-align: left;
+    font-size: 7vh;
+    width: 100%;
+}
+
+.col-slogan-two {
+    border-radius: 50% 0 0 0;
+    width: 100%;
+}
+
+.col-slogan-two p {
+    margin-top: 10%;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    text-align: right;
+    font-size: 7vh;
+}
+
+.col-slogan-three {
+    border-radius: 0 50% 0 0;
+}
+
+.col-slogan-three p {
+    margin-top: 5%;
+    margin-inline-start: 5%;
+    margin-inline-end: 10%;
+    text-align: left;
+    font-size: 8vh;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #f3be7d;
+    border: 0;
+}
+
+.last-card {
+    margin-right: auto;
+}
+
+
+
+/*------FOOTER------*/
+
+.col-footer {
+    height: 8vh;
+
+}
+
+.btn-link img {
+    height: 3vh;
+}
+
+
+/*------UTILITÁRIOS------*/
+
+.bg-light {
+    background-color: #f1f1f1;
+}
+
+.bg-medium {
+    background-color: #8a8585;
+}
+
+
+.bg-blue {
+    background-color: #b3f8f7 !important;
+}
+
+.bg-yelow {
+    background-color: #f3be7d;
+}
+
+.bg-orange {
+    background-color: #f38d7d;
+}
+
+.cl-blue {
+    color: #b3f8f7 !important;
+}
+
+.cl-yelow {
+    color: #f3be7d;
+}
+
+.cl-orange {
+    color: #f38d7d;
+}
+
+.font-large {
+    font-size: large;
+}
