@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>Le.me</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+            <a class="navbar-brand">
+                <div class="navbar-logo">
+                    <img src="../imagens/logo.png" />
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="textoNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item font-large active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item font-large dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Destinos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../pages/nacionais.html">Nacional</a>
+                            <a class="dropdown-item" href="../pages/internacionais.html">Internacional</a>
+                        </div>
+                    </li>
+                    <li class="nav-item font-large">
+                        <a class="nav-link" href="../pages/promocoes.html">Promoções</a>
+                    </li>
+                    <li class="nav-item font-large">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+        
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-orange cl-blue" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper bg-light">
+
+        <section class="section-offset-top section-sobre">
+            <li class="col-form" data-slide="1">                       
+                <div class="container-fluid">
+                    <div class="row col-first">
+                        <div class="col-sm-12 ml-auto col-lg-4 order-2 order-lg-1">
+                            <div class="box-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                          <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+                                        </div>
+                                        <div class="col mb-3">
+                                          <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+                                        </div>
+                                      </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Assunto</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Salvar informações</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Enviar</button>
+                                  </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 ml-auto col-lg-5 order-1 order-lg-2 last-card">
+                            <div class="titulo-sobre mar-bottom-30">
+                                <h1 class="title title-xlarge text-orange">
+                                    Le.me</span>
+                                </h1>
+                            </div>
+                            <div class="info-sobre text-orange">
+                                <h4 class="subtitle text-orange mar-bottom-15">Uma nova maneira de olhar as coisas</h4>
+                                <p>Nulla pellentesque sed nulla vel iaculis. Pellentesque dignissim fringilla urna.
+                                    Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam
+                                    augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra. Cras
+                                    fermentum velit sit amet odio lacinia, ut auctor leo suscipit. Ut malesuada ex ante,
+                                    quis imperdiet dui luctus euismod. Ut quis dapibus lectus. Vivamus volutpat sapien a
+                                    est auctor viverra. Nulla pellentesque sed nulla vel iaculis. Pellentesque dignissim fringilla urna.
+                                    Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam
+                                    augue sit amet leo. Nulla pellentesque sed nulla vel iaculis. Pellentesque dignissim fringilla urna.
+                                    Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam
+                                    augue sit amet leo.</p>
+                                <div class="contact-info-inner mar-top-30">
+                                    <p>contato@<span class="text-orange">leme</span>.com</p>
+                                    <p>+55 (00) 9 9977 8866</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </section>
+
+    </div>
+    
+    <footer class="text-center text-white bg-light">
+        <div class="container pt-4">
+
+            <section class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-facebook-f">
+                        <img src="../imagens/icon facebook.png" alt="icon facebook">
+                    </i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram">
+                        <img src="../imagens/icon instagram.png" alt="icon instagram">
+                    </i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-localizacao">
+                        <img src="../imagens/icon localização.png" alt="icon localização">
+                    </i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-email">
+                        <img src="../imagens/icon mail.png" alt="icon email">
+                    </i></a>
+            </section>
+
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
