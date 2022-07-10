@@ -94,7 +94,6 @@
 .container-fluid,
 .container-fluid>.row {
     height: 100%;
-    padding: 0;
 }
 
 .section-offset-top {
@@ -213,7 +212,7 @@
     display: block;
     height: auto;
     float: left;
-    margin: 0 0 3% 0;
+    margin: 0 0 3% 26%;
 }
 
 .nac-list {
@@ -267,7 +266,7 @@
 }
 
 .nac-item-card-first {
-    margin-left: 10%;
+    margin-left: 30%;
     margin-right: 0;
 }
 
@@ -382,6 +381,14 @@
     color: #fff;
 }
 
+.btn-black {
+    color: #050505;
+}
+
+.btn-black:hover {
+    color: #3a3a3a;
+}
+
 /*------UTILITÁRIOS------*/
 
 .bg-light {
@@ -436,6 +443,9 @@
     color: #050505;
 }
 
+.text-al {
+    text-align: justify;
+}
 
 .text-fg {
     font-size: large;
@@ -443,6 +453,10 @@
 
 .mar-top-15 {
     margin-top: 15px;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 @media (max-width: 992px) {
