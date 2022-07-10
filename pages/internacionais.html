@@ -15,101 +15,217 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-blue">
-            <a class="navbar-brand">
-                <div class="navbar-logo">
-                    <img src="../imagens/logo.png" />
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="navbar-logo">
+                        <img src="../imagens/logo.png" />
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-large active">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item font-large dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Destinos
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/nacionais.html">Nacional</a></li>
+                                <li><a class="dropdown-item" href="#">Internacional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item font-large">
+                            <a class="nav-link" href="../pages/promocoes.html">Promoções</a>
+                        </li>
+
+                        <li class="nav-item font-large">
+                            <a class="nav-link" href="../pages/contato.html">Contatos</a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <div class="collapse navbar-collapse" id="textoNavbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item font-large active">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(Página atual)</span></a>
-                    </li>
-                    <li class="nav-item font-large dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Destinos
+
+                <button class="bnt-blue navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <li class="nav-item font-large dropdown class=" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <a class=" nav-link dropdown-toggle bnt-blue cl-orange text-fg" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../pages/nacionais.html">Nacional</a>
-                            <a class="dropdown-item" href="#">Internacional</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" aria-current="page" href="../index.html">Home</a>
+                            <li class="nav-item font-large dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown text-black" aria-haspopup="true" aria-expanded="false">
+                                    Destinos
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/nacionais.html">Nacional</a></li>
+                                    <li><a class="dropdown-item" href="#">Internacional</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="../pages/promocoes.html">Promoções</a></li>
+                            <li><a class="dropdown-item" href="../pages/contato.html">Contatos</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item font-large">
-                        <a class="nav-link" href="../pages/promocoes.html">Promoções</a>
-                    </li>
-                    <li class="nav-item font-large">
-                        <a class="nav-link" href="../pages/contato.html">Contatos</a>
-                    </li>
-        
-                </ul>
+                </button>
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success bg-orange cl-blue" type="submit">Pesquisar</button>
+                    <button class="btn btn-orange bg-orange cl-blue" type="submit">Pesquisar</button>
                 </form>
             </div>
         </nav>
     </header>
 
     <div class="page-wrapper bg-light">
-        <section class="container-fluid section-offset-top">
+
+        <ul class="nac-list">
+            <li class="nac-form" data-slide="1">
+
+                <div class="col-sm-9 ml-auto nac-title">
+                    <h1 class="title title-xlarge text-orange">
+                        Pacotes de viagens para internacionais </span>
+                    </h1>
+                </div>
+
+                <div class="row">
+                    <div class="input-group col-sm-9 ml-auto">
+                        <input type="text" class="form-control" placeholder="Vai pra onde?" aria-label="First name">
+
+                        <a class="form-control nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Entrada
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <input type="date" class="form-control" placeholder="Entrada" aria-label="Entrada">
+                        </div>
+
+                        <a class="form-control nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Saída
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <input type="date" class="form-control" placeholder="Saída" aria-label="Saída">
+                        </div>
+
+                        <input type="number" class="form-control" placeholder="Quartos" aria-label="Quartos">
+                        <input type="number" class="form-control" placeholder="Hóspedes" aria-label="Hóspedes">
+                        <form class="d-flex" role="search">
+                            <button class="btn btn-outline-success bg-orange cl-blue" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+
             <div class="row">
                 <div class="col-sm-10">
-                    <ul class="nac-list">
-                        <li>
-                            <div class="row">
-                                <div class="col">
-                                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                                </div>
-                                <div class="col">
-                                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                                </div>
-                              </div>
-                            </li>
-                        <li class="nac-itens" data-slide="1">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-3 ml-auto offset-lg-1 order-1 order-lg-2 nac-item-card-first">
-                                    <div class="nac-item-thumb">
-                                        <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
-                                        <img src="../imagens/1- carrossel.jpg" alt="Leme" title="Leme"/></div>
-                                </div>
-                                <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-center">
-                                    <div class="nac-item-thumb">
-                                        <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
-                                        <img src="../imagens/1- carrossel.jpg" alt="Leme" title="Leme"/></div>
-                                </div>
-                                <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-last">
-                                    <div class="nac-item-thumb">
-                                        <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
-                                        <img src="../imagens/1- carrossel.jpg" alt="Leme" title="Leme"/></div>
+                    <li class="nac-itens" data-slide="2">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-3 ml-auto offset-lg-1 order-1 order-lg-2 nac-item-card-first">
+                                <div class="nac-item-thumb">
+                                    <img src="../imagens/curitiba card - 2.jpg" alt="Leme" title="Leme">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title ">Card title</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below
+                                            as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text ">Last updated 3 mins ago</p>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="nac-itens" data-slide="2">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-3 ml-auto offset-lg-1 order-1 order-lg-2 nac-item-card-first">
-                                    <div class="nac-item-thumb">
-                                        <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
-                                        <img src="../imagens/1- carrossel.jpg" alt="Leme" title="Leme"/></div>
-                                </div>
-                                <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-center">
-                                    <div class="nac-item-thumb">
-                                        <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
-                                        <img src="../imagens/1- carrossel.jpg" alt="Leme" title="Leme"/></div>
-                                </div>
-                                <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-last">
-                                    <div class="nac-item-thumb">
-                                        <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
-                                        <img src="../imagens/1- carrossel.jpg" alt="Leme" title="Leme"/></div>
+                            <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-center">
+                                <div class="nac-item-thumb">
+                                    <img src="../imagens/curitiba card - 2.jpg" alt="Leme" title="Leme">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title ">Card title</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below
+                                            as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text ">Last updated 3 mins ago</p>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-last">
+                                <div class="nac-item-thumb">
+                                    <img src="../imagens/curitiba card - 2.jpg" alt="Leme" title="Leme">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title ">Card title</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below
+                                            as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text ">Last updated 3 mins ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nac-itens" data-slide="3">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-3 ml-auto offset-lg-1 order-1 order-lg-2 nac-item-card-first">
+                                <div class="nac-item-thumb">
+                                    <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
+                                    <img src="../imagens/curitiba card - 2.jpg" alt="Leme" title="Leme">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title ">Card title</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below
+                                            as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text ">Last updated 3 mins ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-center">
+                                <div class="nac-item-thumb">
+                                    <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
+                                    <img src="../imagens/curitiba card - 2.jpg" alt="Leme" title="Leme">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title ">Card title</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below
+                                            as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text ">Last updated 3 mins ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 offset-lg-1 order-1 order-lg-2 nac-item-card-last">
+                                <div class="nac-item-thumb">
+                                    <div class="nac-item-box d-none d-lg-block" data-aos="zoom-in"></div>
+                                    <img src="../imagens/curitiba card - 2.jpg" alt="Leme" title="Leme">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title ">Card title</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below
+                                            as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text ">Last updated 3 mins ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
             </div>
-        </section>
+        </ul>
+
     </div>
-    
+
+
     <footer class="text-center text-white bg-light">
         <div class="container pt-4">
 

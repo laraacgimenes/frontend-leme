@@ -234,6 +234,10 @@
     position: relative;
 }
 
+.nac-item-thumb img {
+    opacity: 65%;
+}
+
 .nac-item-box {
     width: 100%;
     height: 100%;
@@ -275,8 +279,32 @@
 
 .nac-item-card-last {
     margin-left: 0;
+}
 
+.nac-form {
+    float: center;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-right: 17%;
+}
 
+.input-group input {
+    height: 8vh;
+}
+
+.input-group a {
+    height: 8vh;
+    text-align: center;
+}
+
+.form-field+.form-field,
+.raised-button {
+    margin-left: 8px;
+}
+
+.nac-title {
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
 /*------FOOTER------*/
@@ -291,19 +319,9 @@
 
 /*------BOTÕES------*/
 
-.btn-outline-success {
-    border-color: #f38d7d;
-}
-
-.btn-outline-success:hover {
-    background-color: #b34c3c;
-    border-color: #b34c3c;
-    color: #fff;
-}
-
 .btn-primary {
     background-color: #f3be7d;
-    border: 0;
+    border-color: #f3be7d;
 }
 
 .btn-primary:hover {
@@ -345,12 +363,23 @@
 }
 
 .btn-orange:hover {
-    background-color: #a34031;
+    background-color: #b34c3c;
+    border-color: #b34c3c;
     color: #fff;
 }
 
 .btn-link img {
     height: 3vh;
+}
+
+.bnt-blue {
+    background-color: #b3f8f7;
+    border-radius: 10%;
+}
+
+.bnt-blue:hover {
+    background-color: #5f9f9e;
+    color: #fff;
 }
 
 /*------UTILITÁRIOS------*/
@@ -387,6 +416,10 @@
     color: #f38d7d;
 }
 
+.cl-light {
+    color: #f1f1f1;
+}
+
 .font-large {
     font-size: large;
 }
@@ -399,11 +432,66 @@
     color: #f1f1f1;
 }
 
+.text-black {
+    color: #050505;
+}
+
+
+.text-fg {
+    font-size: large;
+}
+
 .mar-top-15 {
     margin-top: 15px;
 }
 
 @media (max-width: 992px) {
+
+    .menu-mob,
+    .btn-menu-mob {
+        display: none;
+    }
+
+    .menu {
+        display: table;
+        float: left;
+        height: 110px;
+        margin-left: 30px;
+    }
+
+    .menu a {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        color: #bcbcbc;
+        text-decoration: none;
+        text-transform: lowercase;
+        display: inline-block;
+        margin: 50px 20px 0 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .menu a:first-child {
+        margin-left: 0;
+    }
+
+    .menu a:hover {
+        color: #2CCB69;
+    }
+
+    .menu a:before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #2CCB69;
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transition: all 0.2s ease-out;
+        transform: scale(0, 1);
+        transform-origin: center left;
+    }
 
     .navbar-logo img {
         width: 50%;
@@ -412,15 +500,16 @@
     }
 
     .col-slogan {
-        border-radius: 0;
+        border-radius: 10%;
     }
 
     .col-slogan-two {
-        border-radius: 0;
+        border-radius: 10%;
     }
 
     .col-slogan-three {
-        border-radius: 0;
+        border-radius: 10%;
+        margin-bottom: 5vh;
     }
 
     .col-carousel {

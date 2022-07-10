@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,400i,700,700i,800,800i&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,37 +18,74 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-blue">
-            <a class="navbar-brand">
-                <div class="navbar-logo">
-                    <img src="../imagens/logo.png" />
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="navbar-logo">
+                        <img src="../imagens/logo.png" />
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-large active">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item font-large dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Destinos
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/nacionais.html">Nacional</a></li>
+                                <li><a class="dropdown-item" href="../pages/internacionais.html">Internacional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item font-large">
+                            <a class="nav-link" href="#">Promoções</a>
+                        </li>
+
+                        <li class="nav-item font-large">
+                            <a class="nav-link" href="../pages/contato.html">Contatos</a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <div class="collapse navbar-collapse" id="textoNavbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item font-large active">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(Página atual)</span></a>
-                    </li>
-                    <li class="nav-item font-large dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Destinos
+
+                <button class="bnt-blue navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <li class="nav-item font-large dropdown class=" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <a class=" nav-link dropdown-toggle bnt-blue cl-orange text-fg" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../pages/nacionais.html">Nacional</a>
-                            <a class="dropdown-item" href="../pages/internacionais.html">Internacional</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" aria-current="page" href="../index.html">Home</a>
+                            <li class="nav-item font-large dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown text-black" aria-haspopup="true" aria-expanded="false">
+                                    Destinos
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/nacionais.html">Nacional</a></li>
+                                    <li><a class="dropdown-item" href="../pages/internacionais.html">Internacional</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Promoções</a></li>
+                            <li><a class="dropdown-item" href="../pages/contato.html">Contatos</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item font-large">
-                        <a class="nav-link" href="#">Promoções</a>
-                    </li>
-                    <li class="nav-item font-large">
-                        <a class="nav-link" href="../pages/contato.html">Contatos</a>
-                    </li>
-        
-                </ul>
+                </button>
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success bg-orange cl-blue" type="submit">Pesquisar</button>
+                    <button class="btn btn-orange bg-orange cl-blue" type="submit">Pesquisar</button>
                 </form>
             </div>
         </nav>
@@ -65,7 +102,7 @@
                                     <div class="promocao-item-info text-orange" data-aos-delay="200"
                                         data-aos="fade-right">
                                         <h1 class="title title-large mar-bottom-15">Maldivas</h1>
-                                        <p class="mar-bottom-30">Um lugar que talvez eu nunca vá, mas quem 
+                                        <p class="mar-bottom-30">Um lugar que talvez eu nunca vá, mas quem
                                             eu fico rica e consigo visitar as maldivar, seila né.</p>
                                         <a href="#" class="btn-prm btn-large btn-orange text-light">Saiba mais</a>
                                     </div>
@@ -85,7 +122,7 @@
                                     <div class="promocao-item-info text-orange" data-aos-delay="200"
                                         data-aos="fade-right">
                                         <h1 class="title title-large mar-bottom-15">Maldivas</h1>
-                                        <p class="mar-bottom-30">Um lugar que talvez eu nunca vá, mas quem 
+                                        <p class="mar-bottom-30">Um lugar que talvez eu nunca vá, mas quem
                                             eu fico rica e consigo visitar as maldivar, seila né.</p>
                                         <a href="#" class="btn-prm btn-large btn-orange text-light">Saiba mais</a>
                                     </div>
@@ -105,7 +142,7 @@
                                     <div class="promocao-item-info text-orange" data-aos-delay="200"
                                         data-aos="fade-right">
                                         <h1 class="title title-large mar-bottom-15">Maldivas</h1>
-                                        <p class="mar-bottom-30">Um lugar que talvez eu nunca vá, mas quem 
+                                        <p class="mar-bottom-30">Um lugar que talvez eu nunca vá, mas quem
                                             eu fico rica e consigo visitar as maldivar, seila né.</p>
                                         <a href="#" class="btn-prm btn-large btn-orange text-light">Saiba mais</a>
                                     </div>
@@ -169,9 +206,9 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/script.js"></script>
-    
+
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
 </body>
