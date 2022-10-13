@@ -2,6 +2,8 @@
 
 .navbar {
     height: 10vh;
+    display: flex;
+
 }
 
 .navbar-logo img {
@@ -61,7 +63,7 @@
 
 .col-slogan-two {
     border-radius: 50% 0 0 0;
-    width: 100%;
+
 }
 
 .col-slogan-two p {
@@ -306,6 +308,23 @@
     margin-bottom: 5vh;
 }
 
+/*------CADASTRO------*/
+
+.cad-form {
+    float: center;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-right: 37%;
+}
+
+.cad-mar {
+    margin-top: 1vh;
+}
+
+.text-position {
+    margin-left: 82%;
+}
+
 /*------FOOTER------*/
 
 .col-footer {
@@ -427,8 +446,24 @@
     color: #f1f1f1;
 }
 
+.cl-red {
+    color: #ff0000;
+}
+
+.cl-yelow:hover {
+    color: #b18e64;
+}
+
+.text-greyc:hover {
+    color: #242424;
+}
+
 .font-large {
     font-size: large;
+}
+
+.font-small {
+    font-size: small;
 }
 
 .text-orange {
@@ -443,6 +478,18 @@
     color: #050505;
 }
 
+.text-grey {
+    color: #464646;
+}
+
+.text-greym {
+    color: #181818;
+}
+
+.text-greyc {
+    color: #757575;
+}
+
 .text-al {
     text-align: justify;
 }
@@ -455,11 +502,50 @@
     margin-top: 15px;
 }
 
+.mar-right-15 {
+    margin-right: 15px;
+}
+
+.mar-right-10 {
+    margin-right: 10px;
+}
+
+.no-margin {
+    margin-bottom: 0;
+}
+
 .no-padding {
     padding: 0;
 }
 
 @media (max-width: 992px) {
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar {
+        height: 0%;
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .dropdown-entrar {
+        color: rgba(0, 0, 0, .5);
+        border-color: rgba(0, 0, 0, .1);
+        background-color: #b3f8f7;
+        border-radius: 10%;
+        border: 1px solid transparent;
+
+    }
+
+    .navbar-expand-lg>.container,
+    .navbar-expand-lg>.container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        display: table;
+    }
+
 
     .menu-mob,
     .btn-menu-mob {
@@ -513,6 +599,15 @@
         max-height: 100%;
     }
 
+    .col-slogan p {
+        margin-top: 3%;
+        margin-inline-start: 5%;
+        margin-inline-end: 40%;
+        text-align: left;
+        font-size: 4vh;
+        width: 100%;
+    }
+
     .col-slogan {
         border-radius: 10%;
     }
@@ -521,9 +616,27 @@
         border-radius: 10%;
     }
 
+    .col-slogan-two p {
+        margin-top: 3%;
+        margin-inline-start: 5%;
+        margin-inline-end: 40%;
+        text-align: left;
+        font-size: 4vh;
+        width: 100%;
+    }
+
     .col-slogan-three {
         border-radius: 10%;
         margin-bottom: 5vh;
+    }
+
+    .col-slogan-three p {
+        margin-top: 3%;
+        margin-inline-start: 5%;
+        margin-inline-end: 40%;
+        text-align: left;
+        font-size: 4vh;
+        width: 100%;
     }
 
     .col-carousel {
@@ -538,4 +651,10 @@
     .last-card-mg {
         margin-bottom: 5vh;
     }
+
+    .bg-orange {
+        margin-top: 0%;
+        text-align: justify;
+    }
+
 }

@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Le.me</title>
 
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-blue">
             <div class="container-fluid no-padding">
@@ -61,7 +64,7 @@
                             Menu
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" aria-current="page" href="#">Home</a>
+                            <a class="dropdown-item" aria-current="page" href="index.html">Home</a>
                             <li class="nav-item font-large dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown text-black" aria-haspopup="true" aria-expanded="false">
@@ -70,11 +73,12 @@
 
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="pages/nacionais.html">Nacional</a></li>
-                                    <li><a class="dropdown-item" href="pages/internacionais.html">Internacional</a></li>
+                                    <li><a class="dropdown-item" href="pages/internacionais.html">Internacional</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a class="dropdown-item" href="pages/promocoes.html">Promoções</a></li>
-                            <li><a class="dropdown-item" href="pages/contato.html">Contatos</a></li>
+                            <li><a class="dropdown-item" href="#">Contatos</a></li>
                         </ul>
                     </li>
                 </button>
@@ -82,7 +86,19 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-orange bg-orange cl-blue" type="submit">Pesquisar</button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn bnt-blue cl-orange dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Entrar
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="pages/login.html">Entrar</a>
+                            <a class="dropdown-item" href="pages/cadastro.html">Cadastrar</a>
+                        </div>
+                    </div>
                 </form>
+
             </div>
         </nav>
     </header>
@@ -92,7 +108,7 @@
         <li class="col-itens" data-slide="1">
             <div class="container-fluid no-padding">
                 <div class="row col-first">
-                    <div class="col-sm-12 col-lg-4 bg-orange col-slogan">
+                    <div class="col-sm-12 ml-auto col-lg-4 bg-orange col-slogan">
                         <p class="cl-blue">
                             Uma nova maneira de olhar as coisas!
                         </p>
@@ -175,7 +191,7 @@
                     </div>
 
                     <div class="col-sm-12 ml-auto col-lg-4 bg-blue col-slogan-two">
-                        <p class="cl-yelow font-large">
+                        <p class="  font-large cl-yelow">
                             Viajar é unica coisa que você compra e te deixa rico!
                         </p>
                     </div>
@@ -187,7 +203,7 @@
                 <div class="row col-first">
                     <div class="col-sm-12 col-lg-4 bg-yelow col-slogan-three">
                         <p class="cl-orange font-large">
-                            Viajar é unica coisa que você compra e te deixa rico!
+                            A vida não é pra ser vivida em um único lugar!
                         </p>
                     </div>
                     <div class="col-lg-2 ml-auto">

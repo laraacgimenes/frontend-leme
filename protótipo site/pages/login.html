@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-blue">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <div class="navbar-logo">
                         <img src="../imagens/logo.png" />
                     </div>
@@ -41,11 +41,11 @@
                         </li>
 
                         <li class="nav-item font-large">
-                            <a class="nav-link" href="../pages/promocoes.html">Promoções</a>
+                            <a class="nav-link" href="#">Promoções</a>
                         </li>
 
                         <li class="nav-item font-large">
-                            <a class="nav-link" href="#">Contatos</a>
+                            <a class="nav-link" href="../pages/contato.html">Contatos</a>
                         </li>
                     </ul>
                 </div>
@@ -74,8 +74,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="dropdown-item" href="../pages/promocoes.html">Promoções</a></li>
-                            <li><a class="dropdown-item" href="#">Contatos</a></li>
+                            <li class="nav-item font-large">
+                                <a class="nav-link" href="../pages/promocoes.html">Promoções</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../pages/contato.html">Contatos</a></li>
                         </ul>
                     </li>
                 </button>
@@ -83,6 +85,17 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-orange bg-orange cl-blue" type="submit">Pesquisar</button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn bnt-blue cl-orange dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Entrar
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../pages/login.html">Entrar</a>
+                            <a class="dropdown-item" href="../pages/cadastro.html">Cadastrar</a>
+                        </div>
+                    </div>
                 </form>
             </div>
         </nav>
@@ -90,76 +103,69 @@
 
     <div class="page-wrapper bg-light">
 
-        <section class="section-offset-top">
-            <li class="col-form" data-slide="1">
+        <ul class="section-offset-top cad-mar">
+            <div class="cad-form" data-slide="1">
+
+                <div class="col-sm-5 ml-auto nac-title">
+                    <h1 class="title title-xlarge text-grey">
+                        login do cliente </span>
+                    </h1>
+                </div>
+
                 <div class="container-fluid">
                     <div class="row col-first">
-                        <div class="col-sm-12 ml-auto col-lg-4 order-2 order-lg-1">
+                        <div class="col-sm-5 ml-auto">
                             <div class="box-form">
                                 <form>
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <input type="text" class="form-control" placeholder="Nome"
-                                                aria-label="Nome">
+                                    <div class="mb-5">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label font-large">e-mail:</label>
+                                            <div class="col-lg-12 no-padding">
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                            </div>
                                         </div>
-                                        <div class="col mb-3">
-                                            <input type="text" class="form-control" placeholder="Sobrenome"
-                                                aria-label="Sobrenome">
+                                        <div class="mb-1">
+                                            <label for="exampleInputPassword1"
+                                                class="form-label font-large">senha:</label>
+                                            <div class="col-lg-12 no-padding">
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                        </div>
+
+                                        <label href="#" target="_blank"
+                                            class="text-greyc mb-4 text-position">esqueceu?</label>
+
+                                        <button type="submit" class="btn btn-primary mb-3 col-lg-12">continuar</button>
+
+                                        <div class="mb-3">
+                                            <label class="col-lg-12 offset-3">
+                                                <div cursor="text" type="checkbox" id="input-border">
+                                                    <span>nao tem cadastro? <a href="../pages/cadastro.html"
+                                                            target="_blank" class="cl-yelow">cadastre-se</a>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="col-lg-12">
+                                                <div cursor="text" type="checkbox" id="input-border">
+                                                    <span>Ao continuar com o acesso, você concorda com a nossa <a
+                                                            href="../pages/politica.html" target="_blank"
+                                                            class="cl-yelow">política de privacidade</a>.</span>
+                                                    </span>
+                                                </div>
+                                            </label>
                                         </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Assunto</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            rows="3"></textarea>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Salvar informações</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
                                 </form>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 ml-auto col-lg-5 order-1 order-lg-2 last-card">
-                            <div class="mar-bottom-30">
-                                <h1 class="title title-xlarge text-orange">
-                                    Le.me</span>
-                                </h1>
-                            </div>
-                            <div class="info-sobre text-orange">
-                                <h4 class="subtitle text-orange mar-bottom-15">Uma nova maneira de olhar as coisas</h4>
-                                <p>Nulla pellentesque sed nulla vel iaculis. Pellentesque dignissim fringilla urna.
-                                    Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam
-                                    augue sit amet leo. Phasellus sit amet purus in elit efficitur viverra. Cras
-                                    fermentum velit sit amet odio lacinia, ut auctor leo suscipit. Ut malesuada ex ante,
-                                    quis imperdiet dui luctus euismod. Ut quis dapibus lectus. Vivamus volutpat sapien a
-                                    est auctor viverra. Nulla pellentesque sed nulla vel iaculis. Pellentesque dignissim
-                                    fringilla urna.
-                                    Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam
-                                    augue sit amet leo. Nulla pellentesque sed nulla vel iaculis. Pellentesque dignissim
-                                    fringilla urna.
-                                    Nulla vulputate, ex in tincidunt consequat, dui metus luctus purus, ut dapibus quam
-                                    augue sit amet leo.</p>
-                                <div class="contact-info-inner mar-top-30">
-                                    <p>contato@<span class="text-orange">leme</span>.com</p>
-                                    <p>+55 (00) 9 9977 8866</p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </li>
-        </section>
-
+            </div>
     </div>
 
     <footer class="text-center text-white bg-light">

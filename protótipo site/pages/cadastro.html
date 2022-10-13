@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>Le.me</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="navbar-logo">
+                        <img src="../imagens/logo.png" />
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-large active">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item font-large dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Destinos
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/nacionais.html">Nacional</a></li>
+                                <li><a class="dropdown-item" href="../pages/internacionais.html">Internacional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item font-large">
+                            <a class="nav-link" href="#">Promoções</a>
+                        </li>
+
+                        <li class="nav-item font-large">
+                            <a class="nav-link" href="../pages/contato.html">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="bnt-blue navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <li class="nav-item font-large dropdown class=" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <a class=" nav-link dropdown-toggle bnt-blue cl-orange text-fg" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" aria-current="page" href="../index.html">Home</a>
+                            <li class="nav-item font-large dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown text-black" aria-haspopup="true" aria-expanded="false">
+                                    Destinos
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../pages/nacionais.html">Nacional</a></li>
+                                    <li><a class="dropdown-item" href="../pages/internacionais.html">Internacional</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="../pages/promocoes.html">Promoções</a></li>
+                            <li><a class="dropdown-item" href="../pages/contato.html">Contatos</a></li>
+                        </ul>
+                    </li>
+                </button>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-orange bg-orange cl-blue" type="submit">Pesquisar</button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn bnt-blue cl-orange dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Entrar
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../pages/login.html">Entrar</a>
+                            <a class="dropdown-item" href="../pages/cadastro.html">Cadastrar</a>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper bg-light">
+
+        <ul class="section-offset-top cad-mar">
+            <div class="cad-form" data-slide="1">
+
+                <div class="col-sm-5 ml-auto nac-title">
+                    <h1 class="title title-xlarge text-grey">
+                        criar seu cadastro </span>
+                    </h1>
+                    <p><span class="cl-red">*</span>campos obrigatórios</p>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row col-first">
+                        <div class="col-sm-5 ml-auto">
+                            <div class="box-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                            <span class="cl-red">*</span><label for="exampleInputName1"
+                                                class="form-label font-large">nome completo</label>
+                                            <input type="name" class="form-control" id="exampleInputName1"
+                                                aria-describedby="nameHelp">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div>
+                                            <span class="cl-red">*</span>
+                                            <label class="no-margin font-large">gênero </label>
+                                        </div>
+                                        <span class="text-greyc font-small">pra gente te conhecer um pouquinho melhor
+                                            :)</span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="mar-right-15">
+                                            <input id="F" type="radio" class="mar-right-10" value="F"><span
+                                                class="text-greym">Feminino</span>
+                                        </label>
+                                        <label class="mar-right-15">
+                                            <input id="F" type="radio" class="mar-right-10" value="F"><span
+                                                class="text-greym">Masculino</span>
+                                        </label>
+                                        <label class="mar-right-15">
+                                            <input id="F" type="radio" class="mar-right-10" value="F"><span
+                                                class="text-greym">Não informar</span>
+                                        </label>
+                                    </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <span class="cl-red">*</span><label for="exampleInputData1"
+                                    class="form-label font-large">data de
+                                    nascimento</label>
+                                <div class="col-lg-3 no-padding">
+                                    <input cursor="text" type="tel" id="input-border" data-cy="formField__birthDate"
+                                        type="tel" required="" mask="99/99/9999" maxlength="10" autocorrect="off"
+                                        name="birthDate" placeholder="__/__/____" class="form-control"
+                                        id="exampleInputEmail1">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <span class="cl-red">*</span><label for="exampleInputData1"
+                                    class="form-label font-large">CPF</label>
+                                <div class="col-lg-4 no-padding">
+                                    <input cursor="text" type="tel" id="input-border" data-cy="formField__cpf"
+                                        type="tel" required="" mask="999.999.999-99" maxlength="14" autocorrect="off"
+                                        name="cpf" placeholder="___.___.___-__" class="form-control"
+                                        id="exampleInputCpf1">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <span class="cl-red">*</span><label for="exampleInputData1"
+                                    class="form-label font-large">telefone</label>
+                                <div class="col-lg-4 no-padding">
+                                    <input cursor="text" type="tel" id="input-border" data-cy="formField__phone"
+                                        type="tel" required="" mask="(99) 99999-9999" maxlength="14" autocorrect="off"
+                                        name="phone" placeholder="(__) _____-____" class="form-control"
+                                        id="exampleInputPhone1">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>
+                                    <div cursor="text" type="checkbox" id="input-border">
+                                        <input data-cy="formField__whatsappNotifications" type="checkbox"
+                                            name="whatsappNotifications" placeholder="" value="">
+                                        <span>Receber notificações por WhatsApp</span>
+                                    </div>
+                                </label>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <span class="cl-red">*</span><label for="exampleInputEmail1"
+                                    class="form-label font-large">e-mail</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>
+                                    <div cursor="text" type="checkbox" id="input-border">
+                                        <input data-cy="formField__whatsappNotifications" type="checkbox"
+                                            name="whatsappNotifications" placeholder="" value="">
+                                        <span>Receber e-mails promocionais</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="mb-3">
+                                <span class="cl-red">*</span><label for="exampleInputPassword1"
+                                    class="form-label font-large no-margin">senha</label>
+                                <div>
+                                    <span class="text-greyc font-small">precisa ter entre 6 e 20 caracteres</span>
+                                </div>
+                                <div class="col-lg-6 no-padding">
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Salvar informações</label>
+                            </div>
+
+                            <div>
+                                <label>
+                                    <div cursor="text" type="checkbox" id="input-border">
+                                        <input data-cy="formField__dataSharingThirdParty" type="checkbox"
+                                            name="dataSharingThirdParty" placeholder="" value="" class="cl-yelow">
+                                        <span>compartilhar meus dados com parceiros para ter conteúdos
+                                            personalizados, veja <a href="#" target="_blank" class="cl-yelow">como
+                                                funciona</a>.</span>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary cad-mar">criar seu cadastro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <footer class="text-center text-white bg-light">
+        <div class="container pt-4">
+
+            <section class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-facebook-f">
+                        <img src="../imagens/icon facebook.png" alt="icon facebook">
+                    </i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram">
+                        <img src="../imagens/icon instagram.png" alt="icon instagram">
+                    </i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-localizacao">
+                        <img src="../imagens/icon localização.png" alt="icon localização">
+                    </i></a>
+
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-email">
+                        <img src="../imagens/icon mail.png" alt="icon email">
+                    </i></a>
+            </section>
+
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
